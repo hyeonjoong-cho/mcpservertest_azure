@@ -1,6 +1,6 @@
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("example_server")
+mcp = FastMCP("example_server", host="0.0.0.0", port=8000)
 
 @mcp.tool()
 def greeting(name: str) -> str:
